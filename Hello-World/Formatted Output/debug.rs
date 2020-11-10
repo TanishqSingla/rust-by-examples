@@ -41,4 +41,12 @@ fn main() {
         verb = "jumps over", 
         subject = "the quick brown fox"
     );
+
+    //Specify width to align your text differntly by specifying `:width` in `{}`
+    println!("{number:>width$}", number=1, width=6); 
+
+    /*
+        This will output the number after 5 spaces i.e "     1"
+    */
+
 }

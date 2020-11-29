@@ -3,28 +3,22 @@
     here are some of them
 */
 
-
 fn main() {
     // In general `{}` is used as a placeholder in strings to replace it with a value
-
     //Example
     println!("Novemeber has {} days", 30);
 
     // You can store a number in `{}` like this `{1}` to refer the position of a value
-
     //Example
     println!("{0} this is {1}, {1} this is {0}", "Alice", "Bob");
-
     /* 
         The above statement would output:
         Alice this is Bob, Bob this is Alice 
     */
 
     //Special formatting can be applied using `:` symbol inside `{}`
-
     //Example
     println!("{} of {:b}, know binary", 1, 2);
-    
     /*
         This would output
         1 of 10 people know binary
@@ -33,7 +27,6 @@ fn main() {
     */
 
     // you can also put a named argument inside `{}`
-
     //Example
     println!(
         "{subject} {verb} {object}", 
@@ -43,10 +36,15 @@ fn main() {
     );
 
     //Specify width to align your text differntly by specifying `:width` in `{}`
-    println!("{number:>width$}", number=1, width=6); 
-
+    println!("{number:>width$}", number=1, width=8); 
     /*
         This will output the number after 5 spaces i.e "     1"
     */
 
+
+    //Adding precision
+    println!("This is how you print a decimal with {number} precision, {x:.number$}", x=12.0, number=8);
+    /*
+        basically add a `.` after `:` and then the precision value
+    */
 }

@@ -10,5 +10,7 @@ fn main() {
     println!("{1:?} {0:?} is the {actor:?} name",
              "Slater", 
              "Christian", 
-             actor="actor's");
+             actor="actor\'s");
+    // `Structure` is printable
+    println!("Now {:?} will print!", Structure(3));
 }

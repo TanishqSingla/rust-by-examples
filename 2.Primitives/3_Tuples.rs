@@ -34,7 +34,7 @@ fn main() {
     // To create one element tuples, the comma is required to tell them apart
     // from a literal surrounded by parentheses
     println!("one element tuple: {:?}", (5u32,));
-    println!("just and integer: {:?}", (5u32))
+    println!("just and integer: {:?}", (5u32));
 
     // Tuples can be destructured to create bindings
     let tuple = (1, "hello", 4.5, true);

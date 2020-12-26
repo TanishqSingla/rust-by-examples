@@ -29,8 +29,8 @@ struct Color {
 
 impl Display for Color {
     fn fmt(&self, f: &mut Formatter) -> fmt::Result {
-        write!(f, "RGB ({red}, {green}, {blue}) 0x{red:02X}{green:02X}{blue:02X}",
-                 red = self.red, blue = self.blue, green = self.green)
+        write!(f, "RGB ({0}, {1}, {2}) 0x{0:02X}{1:02X}{2:02X}",
+                 self.red, self.green, self.blue)
     }
 }
 

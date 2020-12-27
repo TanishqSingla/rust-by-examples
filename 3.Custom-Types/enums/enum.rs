@@ -11,6 +11,26 @@ enum WebEvent {
     Click {x: i64, y: i64},
 }
 
+// Type aliases
+enum VeryVerboseEnumOfThingToDoWithNumbers {
+    Add,
+    Subtract,
+}
+
+// Creating an alias of above enum
+type Operations = VeryVerboseEnumOfThingToDoWithNumbers;
+
+// Most common example of type alias
+impl VeryVerboseEnumOfThingToDoWithNumbers {
+    fn run(&self, x: i32, y: i32) -> i32 {
+        match self {
+            Self::Add => x + y,
+            Self::Subtract => x - y,            
+        }
+    }
+}
+
+
 // A function which takes WebEvent enum as argument and returns nothing.
 fn inspect(event: WebEvent) {
     match event {
@@ -37,5 +57,8 @@ fn main() {
     inspect(pasted);
     inspect(click);
     inspect(load);
-    inspect(unload); 
+    inspect(unload);
+
+    // Refering the type alias we created for enum
+    let x = Operations::Add;
 }

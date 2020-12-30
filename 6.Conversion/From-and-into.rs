@@ -15,7 +15,7 @@ fn main() {
   // general example of `from` trait
   // This example converts an `str` to a String
   let my_str = "hello";
-  let _  my_string = String::from(my_str);
+  let _my_string = String::from(my_str);
 
   let num = Number::from(30);
   println!("My number is {:?}", num);

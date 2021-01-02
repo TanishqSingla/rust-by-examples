@@ -16,6 +16,9 @@ fn main() {
     }
   }
 
+
+  let mut names = vec!["Bob", "Frank", "Ferris"];
+
   // iter_mut()
   for name in names.iter_mut() {
     *name = match name {
@@ -24,5 +27,5 @@ fn main() {
     }
   }
 
-  println("names: {:?}", names);
+  println!("names: {:?}", names);
 }

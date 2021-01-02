@@ -5,7 +5,7 @@ fn _unused_example() {
   let optional = Some(7);
 
   match optional {
-    some(i) => {
+    Some(i) => {
       println!("This is a really long string and `{:?}`", i);
       // Needed 2 indentation to destructure `i` from option
     },
@@ -20,7 +20,7 @@ fn _unused_example() {
 fn main() {
   // ALl have type `Option<i32>`
   let number = Some(7);
-  let letter = Option<i32> = None;
+  let letter: Option<i32> = None;
   let emoticon: Option<i32> = None;
 
   // The `if let` construct reads: "if `let` destructures `number` into Some(i), evaluate the block (`{}`)."

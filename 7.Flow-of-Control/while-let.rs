@@ -29,7 +29,7 @@ fn main() {
       println!("Greater than 9, quit!");
       optional = None;
     } else {
-      println!("`i` is `{:?}`. Try again!");
+      println!("`i` is `{:?}`. Try again!", i);
       optional = Some(i + i);
     }
   }

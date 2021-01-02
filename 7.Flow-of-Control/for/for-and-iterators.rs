@@ -7,4 +7,22 @@ fn main() {
       _ => println!("Hello {}", name),
     }
   }
+
+  // using .into_iter()
+  for name in names.into_iter() {
+    match name {
+      "Ferris" => println!("There is a rustacean among us"),
+      _ => println!("Hello {}", name),
+    }
+  }
+
+  // iter_mut()
+  for name in names.iter_mut() {
+    *name = match name {
+      &mut "Ferris" => "There is a rustacean among us",
+      _ => "Hello",
+    }
+  }
+
+  println("names: {:?}", names);
 }

@@ -11,3 +11,8 @@ pub fn indirect_access() {
 
   private_function();
 }
+
+// Command line Arguments used to create lib
+/*
+$ rustc --crate-type=lib rary.rs
+*/

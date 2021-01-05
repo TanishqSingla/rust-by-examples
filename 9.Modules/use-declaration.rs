@@ -16,7 +16,7 @@ mod deeply {
 fn main() {
   other_function();
 
-  println!("Entering block");
+println!("Entering block");
   {
     // This is equivalent to `use::deeply::nested::function as function`
     // This function() will shoadow the outer one.

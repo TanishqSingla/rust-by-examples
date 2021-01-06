@@ -10,5 +10,5 @@ fn main() {
   // Single gen can also have type implicitly
   let _t = SingleGen(A);
   let _i32 = SingleGen(6);
-  let _chhar SingleGen('a'); // Uses `char`
+  let _char = SingleGen('a'); 
 }

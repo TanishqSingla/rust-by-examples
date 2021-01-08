@@ -2,7 +2,7 @@ use std::marker::PhantomData;
 
 // A phantom tuple struct which is generic over `A` with hidden parameter `B`.
 #[derive(PartialEq)] // ALlow equality test for this type.
-struct PhantomTuple<A, B>(first: A, PhantomData<B>);
+struct PhantomTuple<A, B>(A, PhantomData<B>);
 
 // A phantom type struct which is generic over `A` with hidden parameter `B`.
 #[derive(PartialEq)]
@@ -34,5 +34,5 @@ fn main() {
   // println!("_tuple1 == _tuple2 yields: {}", _tuple1 == _tuple2);
 
   // Compile time error
-  println!("_struct1 == _struct2 yields: {}", _struct1 == _struct2);
+  // println!("_struct1 == _struct2 yields: {}", _struct1 == _struct2);
 }

@@ -8,7 +8,7 @@ struct GenVal<T> {
 
 // impl of Val
 impl Val {
-  fn value(&self) -> &f64 {
+  fn value(&self) -> &`f64 {
     &self.val
   }
 }

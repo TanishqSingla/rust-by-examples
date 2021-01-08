@@ -10,8 +10,8 @@ impl Blue for BlueJay {}
 
 // These functions are only valid for types which implement these
 // traits. The fact that the traits are empty is irrelevant.
-fn red<T: Red>(_: T) -> &'static str {"red"}
-fn blue<T: Blue>(_: T) -> &'static str {"blue"}
+fn red<T: Red>(_: &T) -> &'static str {"red"}
+fn blue<T: Blue>(_: &T) -> &'static str {"blue"}
 
 fn main() {
   let cardinal = Cardinal;
@@ -20,6 +20,6 @@ fn main() {
 
   // `red()` won't work on a blue jay nor vice versa
   // because of the bounds.
-  println!("A cardinal is {}", red*(&Cardinal));
-  println!("A blue jay is {}", blue(&BlueJay));
+  println!("A cardinal is {}", red(&cardinal));
+  println!("A blue jay is {}", blue(&blue_jay));
 }

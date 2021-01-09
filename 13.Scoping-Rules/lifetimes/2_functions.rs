@@ -31,5 +31,5 @@ fn main() {
 
   let mut t = 3;
   add_one(&mut t); 
-  print_one(&t); 
+  print_one(&t) 
 }

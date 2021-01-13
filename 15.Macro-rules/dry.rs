@@ -1,3 +1,4 @@
+// DRY - Don't Repeat Yourself
 use std::ops::{Add, Mul, Sub};
 
 macro_rules! assert_equal_len {

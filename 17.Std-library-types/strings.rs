@@ -56,4 +56,16 @@ fn main() {
                          <- can be escaped too!";
     println!("{}", long_strings);
 
+    // raw string literal
+    let raw_str = r"Escape don't work here: \x3F \u{211D}";
+    println!("{}", raw_str);
+
+    // If you need quotes in a raw string, add a pair of #s
+    let quotes = r#"And then I said: "There is no escape""#;
+    println!("{}", quotes);
+
+    // If you need '# in your string, just use more #s in the delimeter.
+    // There is no limit for the number of #s you can use.
+    let long_delimiter = r###"A string with "# in it. And even"##!"###;
+    println!("{}", long_delimiter);
 }
